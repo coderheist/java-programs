@@ -1,0 +1,32 @@
+import java.util.*;
+class Class {
+	String name;
+    int sem;
+    int Rollno;
+    String email;
+    int marks;
+void get() {
+	Scanner sc=new Scanner(System.in);
+	name=sc.next();
+	sem=sc.nextInt();
+	Rollno=sc.nextInt();
+	email=sc.next();
+	marks=sc.nextInt();
+}
+void display() {
+	System.out.println(name);
+	System.out.println(sem);
+	System.out.println(Rollno);
+	System.out.println(email);
+	System.out.println(marks);
+}
+	public static void main(String[] args) {
+		Class cs=new Class();
+		Class cs1=new Class();
+		cs.get();
+		cs.display();
+		cs1.get();
+		cs1.display();
+	}
+
+}
