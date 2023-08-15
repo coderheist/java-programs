@@ -1,0 +1,17 @@
+public class simple {
+	public static int fact(int n) {
+		if(n==1) {
+			return n;
+		}
+		int f1=fact(n-1);
+		int f=n*f1;
+		return f;
+	}
+
+	public static void main(String[] args) {
+		int n=9;
+		System.out.print(fact(n));
+
+	}
+
+}
