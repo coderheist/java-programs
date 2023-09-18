@@ -1,0 +1,24 @@
+package array;
+import java.util.*;
+public class max_min_eleinarray {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int sum=0;
+		int b=0;
+		int []arr ;
+		int []arr1;
+		arr= new int[n];
+		for(int j=0;j<n;j++) {
+			int a=sc.nextInt();
+			arr[j]=a;
+		}
+		for(int i=0;i<n-1;i++) {
+			b=  Math.max(arr[i],arr[i+1]);
+		}
+		System.out.println("The max element is "+b);
+		 int res = arr[0];
+	        for (int i = 1; i < n-1; i++)
+	            res = Math.min(res, arr[i+1]);
+		System.out.println(" The min element is "+res);
+	}}
