@@ -1,0 +1,20 @@
+package array;
+import java.util.Scanner;
+public class sum_ofelements {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int sum=0;
+		int []arr ;
+		arr= new int[n];
+		for(int j=0;j<n;j++) {
+			int a=sc.nextInt();
+			arr[j]=a;
+		}
+		for(int i=0;i<n;i++) {
+			sum=sum+arr[i];
+			}
+		System.out.print("sum of all elements is: "+sum);
+	}
+}
