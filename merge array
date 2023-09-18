@@ -1,0 +1,16 @@
+package array;
+import java.util.Arrays;
+public class mergearray {
+	public static void main(String[] args) {
+		int[] arr1= {10,20,30,40,50};		
+		int []arr2= {60,70,80,90,100};
+		int []arr3;
+		int len1=arr1.length;
+		int len2=arr2.length;
+		int len3=len1+len2;
+		arr3=new int[len3];
+		System.arraycopy(arr1, 0, arr3, 0, len1);
+	    System.arraycopy(arr2, 0, arr3, len1,len2);
+	    System.out.println(Arrays.toString(arr3));
+	}
+}
