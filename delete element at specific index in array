@@ -1,0 +1,29 @@
+package array;
+import java.util.Scanner;
+public class del_element_specific {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int rem=0;
+		int []arr ;
+		arr= new int[n];
+		for(int j=0;j<n;j++) {
+			int a=sc.nextInt();
+			arr[j]=a;
+		}
+		System.out.print(" enter the index from which deletion has to be done:");
+		int s=sc.nextInt();
+		rem=arr[s];
+		if(rem<0 || rem>n) {
+			System.out.println(" please enter between 1 to %d");
+		}else {
+			for(int i=s-1;i<n-1;i++) {
+				arr[i]=arr[i+1];
+			}
+			n--;
+		}
+		for(int k=0;k<n;k++) {
+			System.out.print(" "+arr[k]);
+		}
+	}
+}
