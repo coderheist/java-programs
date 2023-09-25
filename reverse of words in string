@@ -1,0 +1,16 @@
+package String;
+import java.util.*;
+public class reverseorderof_words {
+	public static String reverse(String str) {
+		String str1=" ";
+		String [] B = str.split(" ");
+		for(int i= B.length-1;i>=0;i--) {
+			 str1= str1+B[i];
+		}
+		return str1;
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String str=sc.nextLine();
+		System.out.println(reverse(str));
+	}}
