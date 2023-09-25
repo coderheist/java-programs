@@ -1,0 +1,17 @@
+package String;
+import java.util.Scanner;
+public class firstoccurance_string {
+	public static void main(String[] args) {
+		 Scanner sc=new Scanner(System.in);
+		 String s=sc.next();
+		 char[] st=s.toCharArray();
+		 String a=sc.next();
+		 char[] b=a.toCharArray();
+		 for(int i=0;i<st.length;i++) {
+			if(st[i]== b[0]) {
+				 System.out.println(" index of the char is:"+i);
+			}
+		 }
+	}
+
+}
