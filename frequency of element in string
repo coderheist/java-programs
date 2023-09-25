@@ -1,0 +1,21 @@
+package String;
+import java.util.*;
+public class freq_element {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s1=sc.next();
+		HashMap<Character ,Integer > count=new HashMap<Character, Integer >();
+		char [] str=s1.toCharArray();
+		for(char a:str) {
+			if(count.containsKey(a)) {
+				count.put(a,count.get(a)+1);
+			}
+			else {
+				count.put(a,1);
+			}
+		}
+		for (Map.Entry entry : count.entrySet()) {
+            System.out.print(entry.getKey()+""+entry.getValue());
+        }
+	}
+}
