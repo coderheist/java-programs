@@ -1,0 +1,19 @@
+package String;
+import java.util.Scanner;
+import java.util.Arrays;
+public class highest_freqofchar {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		 String s=sc.next();
+		 int grt=0,ind=0;
+		 s=s.toLowerCase();
+		 int[] b=new int[26];
+		 for(int i=0;i<s.length();i++) {
+			 b[s.charAt(i)-97]++;
+			 if(b[i]>grt) {
+				 grt=b[i];
+				 ind=i;
+			 }
+	}
+		 System.out.print((char)(ind+97));
+}}
